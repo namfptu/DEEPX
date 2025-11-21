@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from '../LanguageSwitcher';
 
-export default function Navbar() {
+export default function NavbarEn() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -18,11 +18,11 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: 'Trang chủ', href: '#home' },
-    { label: 'Giới thiệu', href: '#about' },
-    { label: 'Dịch vụ', href: '#services' },
-    { label: 'Giá trị', href: '#values' },
-    { label: 'Liên hệ', href: '#contact' },
+    { label: 'Home', href: '#home' },
+    { label: 'Services', href: '#services' },
+    { label: 'About', href: '#about' },
+    { label: 'Values', href: '#values' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -100,3 +100,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

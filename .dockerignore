@@ -1,0 +1,7 @@
+# Loại trừ các thư mục và file không cần thiết
+node_modules
+.git
+.gitignore
+README.md
+*.log
+npm-debug.log
